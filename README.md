@@ -1,6 +1,4 @@
-Tentu! Berikut adalah contoh README yang bisa Anda gunakan untuk program pengecekan folder:
 
----
 
 # Storage Checking
 
