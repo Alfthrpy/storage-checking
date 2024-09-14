@@ -24,6 +24,10 @@ To use this program, you need Python installed on your machine. No additional li
    git clone <repository-url>
    cd <repository-directory>
    ```
+2. **install requirement**:
+   ```terminal
+   pip install humanize
+   ```
 
 2. **Run the program**:
    ```bash
@@ -41,19 +45,20 @@ To use this program, you need Python installed on your machine. No additional li
 Here's an example of how the program's output might look:
 
 ```text
-Input directory: C:\Users
-
-Scanning 'Documents': 1000 files [01:10, 950 files/s] Size so far: 200.0 MiB
-Folder 'Documents' with size 200.1 MiB completed.
+IInput directory : D:\EMULATOR GAME
+Folder EMULATOR GAME\DOLPHIN: 59.5 MiB
 --------------------------------------------------
-Scanning 'Downloads': 500 files [00:45, 1100 files/s] Size so far: 350.5 MiB
-Folder 'Downloads' with size 350.6 MiB completed.
+Folder EMULATOR GAME\PCSX2 1.6.0: 55.3 MiB
+--------------------------------------------------
+Folder EMULATOR GAME\SWITCH: 108.9 MiB
+--------------------------------------------------
+Folder EMULATOR GAME\yuzu: 418.3 MiB
 --------------------------------------------------
 
-Folders in 'C:\Users' sorted by size (GB):
+Folders in D:\EMULATOR GAME sorted by size (GB):
 
-Documents: 200.1 MiB
-Downloads: 350.6 MiB
+SWITCH: 200.1 MiB
+YUZU: 350.6 MiB
 
 ==================================================
 ```
@@ -62,6 +67,7 @@ Downloads: 350.6 MiB
 
 - The program uses the `humanize` library to format sizes for readability.
 - Ensure the directory path provided exists and you have sufficient permissions to access it.
+- the programs just display folder that have size more than 500MB, you can adjust whenever you like
 
 ## Contributing
 
