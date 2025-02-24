@@ -14,7 +14,7 @@ This program helps you analyze and check the size of folders within a specified 
 
 ## Installation
 
-To use this program, you need Python installed on your machine. or you can download executable file in Release
+To use this program, you need Python installed on your machine. Alternatively, you can [download the executable file](https://github.com/Alfthrpy/storage-checking/releases/download/storage-cheking/check_storage.exe) from the Releases page.
 
 ## Usage with cloning project
 
