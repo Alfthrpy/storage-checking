@@ -9,7 +9,6 @@ This program helps you analyze and check the size of folders within a specified 
 ## Features
 
 - Calculates and displays the size of each folder.
-- Lists folders that are larger than 500MB.
 - Allows you to navigate into subdirectories and repeat the process.
 
 ## Installation
@@ -20,8 +19,8 @@ To use this program, you need Python installed on your machine. Alternatively, y
 
 1. **Clone or download the repository**:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/Alfthrpy/storage-checking
+   cd storage-checking
    ```
 2. **install requirement**:
    ```terminal
@@ -30,7 +29,7 @@ To use this program, you need Python installed on your machine. Alternatively, y
 
 2. **Run the program**:
    ```bash
-   python storage_check.py
+   python check_storage.py
    ```
 
 3. **Input the directory path** when prompted. The program will start analyzing the specified directory.
@@ -46,6 +45,8 @@ To use this program, you need Python installed on your machine. Alternatively, y
 Here's an example of how the program's output might look:
 
 ```text
+Input direktori (root): D:\Games
+
 Calculating sizes: 100%|████████████████| 5/5 [00:01<00:00,  4.72it/s]
 
 Direktori saat ini: D:\Games
