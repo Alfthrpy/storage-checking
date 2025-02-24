@@ -4,20 +4,19 @@
 
 ## Overview
 
-This program helps you analyze and check the size of folders within a specified directory. It calculates the size of each folder and lists them in descending order based on their size. The program skips empty folders and provides real-time updates on the size of folders being processed.
+This program helps you analyze and check the size of folders within a specified directory. It calculates the size of each folder and lists them in descending order based on their size.
 
 ## Features
 
 - Calculates and displays the size of each folder.
-- Skips empty folders and provides a message indicating their emptiness.
 - Lists folders that are larger than 500MB.
 - Allows you to navigate into subdirectories and repeat the process.
 
 ## Installation
 
-To use this program, you need Python installed on your machine. No additional libraries are required.
+To use this program, you need Python installed on your machine. or you can download executable file in Release
 
-## Usage
+## Usage with cloning project
 
 1. **Clone or download the repository**:
    ```bash
@@ -26,7 +25,7 @@ To use this program, you need Python installed on your machine. No additional li
    ```
 2. **install requirement**:
    ```terminal
-   pip install humanize
+   pip install -r requirements.txt
    ```
 
 2. **Run the program**:
@@ -40,32 +39,41 @@ To use this program, you need Python installed on your machine. No additional li
    - After scanning the initial directory, you can choose to continue with a subdirectory.
    - The program will list subdirectories larger than 500MB and allow you to select one to analyze further.
 
+## Or you can download the executable program and run it on your computer
+
 ## Example
 
 Here's an example of how the program's output might look:
 
 ```text
-IInput directory : D:\EMULATOR GAME
-Folder EMULATOR GAME\DOLPHIN: 59.5 MiB
---------------------------------------------------
-Folder EMULATOR GAME\PCSX2 1.6.0: 55.3 MiB
---------------------------------------------------
-Folder EMULATOR GAME\SWITCH: 108.9 MiB
---------------------------------------------------
-Folder EMULATOR GAME\yuzu: 418.3 MiB
---------------------------------------------------
+Calculating sizes: 100%|████████████████| 5/5 [00:01<00:00,  4.72it/s]
 
-Folders in D:\EMULATOR GAME sorted by size (GB):
+Direktori saat ini: D:\Games
+╒══════╤═══════════════════════════════════════════════════════════╤═══════════╕
+│   No │ Subfolder                                                 │ Ukuran    │
+╞══════╪═══════════════════════════════════════════════════════════╪═══════════╡
+│    1 │ Elden Ring                                                │ 68.0 GiB  │
+├──────┼───────────────────────────────────────────────────────────┼───────────┤
+│    2 │ WorldWarZ                                                 │ 66.7 GiB  │
+├──────┼───────────────────────────────────────────────────────────┼───────────┤
+│    3 │ Epic Games                                                │ 1.0 GiB   │
+├──────┼───────────────────────────────────────────────────────────┼───────────┤
+│    4 │ Balatro.v1.0.1m                                           │ 132.2 MiB │
+├──────┼───────────────────────────────────────────────────────────┼───────────┤
+│    5 │ EldenRing-Save-Manager-v1.73-portable-214-1-73-1709394075 │ 77.5 MiB  │
+╘══════╧═══════════════════════════════════════════════════════════╧═══════════╛
 
-SWITCH: 200.1 MiB
-YUZU: 350.6 MiB
+Menu:
+1. Masuk ke subfolder
+2. Kembali ke direktori sebelumnya
+3. Keluar
 
-==================================================
+Masukkan pilihan Anda (1/2/3):
 ```
 
 ## Notes
 
-- The program uses the `humanize` library to format sizes for readability.
+- The program uses the `humanize`, `tabulate` and `tqdm` library to format sizes for readability.
 - Ensure the directory path provided exists and you have sufficient permissions to access it.
 - the programs just display folder that have size more than 500MB, you can adjust whenever you like
 
